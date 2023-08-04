@@ -1,0 +1,224 @@
+
+/*Tipografias */
+
+@font-face{
+  font-family:'principal' ;
+  src: url('../fuentes/Poppins-Regular.ttf');
+}
+/*toda la pagina
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+
+  }*/
+  body{
+    background-color: white;
+    font-style: italic;
+   
+  }
+
+  .head
+  {
+    display: flex;
+    font-style:italic;
+    color: black;
+    justify-content: center;
+   
+
+  }
+ .titulo{ text-decoration:none;
+  color: black;
+}
+  .menu
+  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding:0 20px ;
+
+  } 
+ .menu li
+  {
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   display: inline-block;
+   padding:0 20px ;
+   font-size: 18px;
+
+  } 
+.group
+{
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  padding:0 20px ;
+ 
+}
+.group span
+{
+  padding:0 4px ;
+  display: block !important;
+  margin: 0 0 10px 0;
+  cursor: pointer
+  
+}
+
+/*ultimo cambio en tamaños de imagens 12-07-2023 18:17*/
+.group span img {
+  height: 90%/*auto !important*/;
+  width: 100%;
+  
+}
+
+.final
+{
+  font-size: 0;
+  display: flex;
+ 
+  justify-content: center;
+  justify-content:space-around;
+  padding:10 20px ;
+ 
+}
+.final .icono
+{ 
+  /* boder para validar doonde queda el objeto
+  border: 6px solid red; */
+  padding:0 20px ;
+
+  
+  cursor: pointer
+  
+}
+/*
+.thumb-list {
+  font-size: 0
+}
+
+.thumb-list .thumb {
+  display: block !important;
+  margin: 0 0 10px 0;
+  cursor: pointer
+}
+
+.thumb-list .thumb img {
+  height: auto !important;
+  width: 100%
+}*/
+@media (max-width: 900px) {
+
+/*Tipografias */
+
+@font-face{
+  font-family:'principal' ;
+  src: url('../fuentes/Poppins-Regular.ttf');
+}
+/*toda la pagina
+* {
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+
+  }*/
+  body{
+    background-color: white;
+    font-style: italic;
+   
+  }
+
+  .head
+  {
+    display: flex;
+    font-style:italic;
+    color: black;
+    justify-content: center;
+   
+
+  }
+ .titulo{ text-decoration:none;
+  font-size: 28px;
+  color: black;
+}
+  .menu
+  {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+   /*
+   -webkit-calc(30% + 5px);
+   */
+   padding:0 20px ;
+
+  } 
+ .menu li
+  {
+   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   display: inline-block;
+   padding:0 20px ;
+   font-size: 12px;
+
+  } 
+.group
+{
+  font-size: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding:0 20px ;
+
+ 
+}
+.group span
+{
+  padding:0 4px ;
+  display: block !important;
+  margin: 0 0 10px 0;
+  cursor: pointer
+  
+}
+
+/*ultimo cambio en tamaños de imagens 12-07-2023 18:17*/
+.group span img {
+  height: 90%/*auto !important*/;
+  width: 100%;
+  
+}
+
+.none1{
+  /*clase none1 para ocultar fots en Responsive*/
+   display: flex;
+    display: none;
+}
+
+.final
+{
+  font-size: 0;
+  display: flex;
+ 
+  justify-content: center;
+  justify-content:space-around;
+  padding:10 20px ;
+ 
+}
+.final .icono
+{ 
+  /* boder para validar doonde queda el objeto
+  border: 6px solid red; */
+  padding:0 20px ;
+
+  
+  cursor: pointer
+  
+}
+
+
+}
