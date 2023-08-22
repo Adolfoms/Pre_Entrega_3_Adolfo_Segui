@@ -1,0 +1,308 @@
+
+/*Tipografias */
+
+@font-face{
+    font-family:'principal' ;
+    src: url('../fuentes/Poppins-Regular.ttf');
+  }
+
+
+    /*primera variable sass*/
+$color-titulo: black;
+$color-fondo: white;
+
+body {
+	background-color:$color-fondo ;
+}
+
+$columnas:repeat(2, 1fr);
+$filas:repeat(2, 1fr);
+/* insertar grid*/
+.body-bio{
+    display: grid;
+    margin: 0px;
+    padding:30px 50px 30px;
+  grid-template-columns:$columnas;
+  grid-template-rows:$filas;
+
+  }
+
+  
+.grop-bio { 
+    grid-column-start: 2;
+    grid-row: 1;
+    padding: 30px 50px 30px;
+    font-size: 12px;
+    margin: 0 0 1em;
+  }
+  
+  .bio-img{
+    padding:0 4px ;
+    display: block !important;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    height: 90%;
+    width: 100%;
+    
+  }
+  $tama-texto:24px;
+  .bloque-texto {
+   font-size:$tama-texto ;
+    grid-column-start: 2;
+    grid-row: 1;
+    padding: 50px 50px 50px;
+    letter-spacing: .04em;
+    ;
+  }
+  
+    .head
+    {
+      display: flex;
+      font-style:italic;
+      color: black;
+      justify-content: center;
+     /*gradiente*/
+     background-image: linear-gradient( gray,white);
+  
+    }
+    .dominio{
+animation-name:titulo-texto;
+animation-iteration-count: 1;
+animation-timing-function: ease-out;
+animation-duration: 1s;
+animation-delay: 1s;
+    }
+    @keyframes titulo-texto {
+        0%{
+            transform: rotate(0);
+        }
+    
+        100%{
+            transform: rotate(360deg );
+        }
+    }
+   .titulo{ text-decoration:none;
+    color: black;
+  }
+    .menu
+    {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding:0 20px ;
+  
+    } 
+   .menu li
+    {
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     list-style: none;
+     display: inline-block;
+     padding:0 20px ;
+     font-size: 18px;
+  
+    } 
+  .group
+  {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    padding:0 20px ;
+   
+  }
+  .group span
+  {
+    padding:0 4px ;
+    display: block !important;
+    margin: 0 0 10px 0;
+    cursor: pointer
+    
+  }
+  
+  /*ultimo cambio en tamaños de imagens 12-07-2023 18:17*/
+  .group span img {
+    height: 90%/*auto !important*/;
+    width: 100%;
+    
+  }
+  .copyright{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .propiedad-intelectual
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .final
+  {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    justify-content:space-around;
+    padding:10 20px ;
+   
+  }
+  .final .icono
+  { 
+    /* boder para validar doonde queda el objeto
+    border: 6px solid red; */
+    padding:0 20px ;
+    cursor: pointer
+    
+  }
+  
+  
+  /*Responsive*/
+  @media (max-width: 900px) {
+  
+  /*Tipografias */
+  
+  @font-face{
+    font-family:'principal' ;
+    src: url('../fuentes/Poppins-Regular.ttf');
+  }
+  /*fondo*/
+    body{
+      background-color:$color-fondo;
+      font-style: italic;
+    }
+  
+   /* grid responsive*/
+   $columnas-respo:repeat(1, 1fr);
+$filas-respo:repeat(3, 1fr);
+$padd-respo: 10px 50px 20px;
+$color-texto:black;
+$ocultar-foto:none;
+
+/*fin variables*/
+   .body-bio{
+    display: grid;
+  grid-template-columns:$columnas-respo;
+  grid-template-rows:$filas-respo;
+
+  }
+.grop-bio { 
+  padding:$padd-respo;
+  grid-column-start: 1;
+  grid-row: 2;
+
+}
+.bio-img{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding:0 20px ;
+}
+.bloque-texto {
+    font-size: $tama-texto;
+  padding: 10px 50px 20px;
+  grid-column-start: 1;
+  grid-row: 2;
+
+}
+  
+    .head
+    {
+      display: flex;
+      font-style:italic;
+      color:$color-texto;
+      justify-content: center;
+         /*gradiente*/
+      background-image: linear-gradient( gray,white);
+  
+    }
+   .titulo{ text-decoration:none;
+    font-size: 28px;
+    color: $color-texto;
+  }
+    .menu
+    {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+     /*
+     -webkit-calc(30% + 5px);
+     */
+     padding:0 20px ;
+  
+    } 
+   .menu li
+    {
+     
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     list-style: none;
+     display: inline-block;
+     padding:0 20px ;
+     font-size: 12px;
+  
+    } 
+  .group
+  {
+    font-size: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding:0 20px ;
+  
+   
+  }
+  .group span
+  {
+    padding:0 4px ;
+    display: block !important;
+    margin: 0 0 10px 0;
+    cursor: pointer
+    
+  }
+  
+  /*ultimo cambio en tamaños de imagens 12-07-2023 18:17*/
+  .group span img {
+    height: 90%/*auto !important*/;
+    width: 100%;
+    
+  }
+  
+  .none1{
+    /*clase none1 para ocultar fots en Responsive*/
+     display: flex;
+      display:$ocultar-foto;
+  }
+  .copyright{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .propiedad-intelectual
+  {
+    display: flex;
+    justify-content: center;
+  }
+  .final
+  {
+    font-size: 0;
+    display: flex;
+   
+    justify-content: center;
+    justify-content:space-around;
+    padding:10 20px ;
+   
+  }
+  .final .icono
+  { 
+    /* boder para validar doonde queda el objeto
+    border: 6px solid red; */
+    padding:0 20px ;
+    cursor: pointer
+    
+  }
+  
+  
+  }
+  
