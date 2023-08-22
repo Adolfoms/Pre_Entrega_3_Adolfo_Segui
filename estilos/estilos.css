@@ -27,6 +27,7 @@ body {
 }
 
 .bio-img {
+  object-fit: cover;
   padding: 0 4px;
   display: block !important;
   margin: 0 0 10px 0;
@@ -41,6 +42,17 @@ body {
   grid-row: 1;
   padding: 50px 50px 50px;
   letter-spacing: 0.04em;
+}
+
+.form-label {
+  grid-column-start: 1;
+  grid-row: 2;
+}
+
+.mb-3 {
+  grid-column-start: 1;
+  grid-row: 2;
+  padding: 50px 50px 50px;
 }
 
 .head {
@@ -160,16 +172,24 @@ body {
     grid-row: 2;
   }
   .bio-img {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 0 20px;
+    object-fit: scale-down;
+    padding: 0 4px;
+    display: block !important;
+    margin: 0 0 10px 0;
+    cursor: pointer;
+    height: 50%;
+    width: 100%;
   }
   .bloque-texto {
     font-size: 24px;
     padding: 10px 50px 20px;
     grid-column-start: 1;
     grid-row: 2;
+  }
+  .mb-3 {
+    grid-column-start: 1;
+    grid-row: 3;
+    padding: 50px 50px 50px;
   }
   .head {
     display: flex;
