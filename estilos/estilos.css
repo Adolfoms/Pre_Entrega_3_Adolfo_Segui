@@ -29,7 +29,7 @@ body {
 .bio-img {
   object-fit: cover;
   padding: 0 4px;
-  display: block !important;
+  display: block;
   margin: 0 0 10px 0;
   cursor: pointer;
   height: 90%;
@@ -164,25 +164,19 @@ body {
   .body-bio {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto auto auto;
   }
   .grop-bio {
-    padding: 10px 50px 20px;
     grid-column-start: 1;
     grid-row: 2;
   }
   .bio-img {
-    object-fit: scale-down;
-    padding: 0 4px;
-    display: block !important;
-    margin: 0 0 10px 0;
-    cursor: pointer;
-    height: 50%;
-    width: 100%;
+    padding: 10px 10px 10px 10px;
+    object-fit: cover;
   }
   .bloque-texto {
     font-size: 24px;
-    padding: 10px 50px 20px;
+    padding: 10px 10px 10px 10px;
     grid-column-start: 1;
     grid-row: 2;
   }
@@ -208,9 +202,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*
-    -webkit-calc(30% + 5px);
-    */
     padding: 0 20px;
   }
   .menu li {

@@ -39,7 +39,7 @@ $filas:repeat(2, 1fr);
   .bio-img{
     object-fit: cover;
     padding:0 4px ;
-    display: block !important;
+    display: block ;
     margin: 0 0 10px 0;
     cursor: pointer;
     height: 90%;
@@ -66,7 +66,7 @@ $filas:repeat(2, 1fr);
     padding: 50px 50px 50px;
   }
     .head
-    {
+    { 
       display: flex;
       font-style:italic;
       color: black;
@@ -183,8 +183,8 @@ animation-delay: 1s;
   
    /* grid responsive*/
    $columnas-respo:repeat(1, 1fr);
-$filas-respo:repeat(3, 1fr);
-$padd-respo: 10px 50px 20px;
+$filas-respo: auto auto auto;
+$padd-respo: 10px 10px 10px 10px;
 $color-texto:black;
 $ocultar-foto:none;
 
@@ -196,25 +196,21 @@ $ocultar-foto:none;
 
   }
 .grop-bio { 
-  padding:$padd-respo;
+
   grid-column-start: 1;
   grid-row: 2;
 
 }
 .bio-img{
-    object-fit: scale-down;
-    padding:0 4px ;
-    display: block !important;
-    margin: 0 0 10px 0;
-    cursor: pointer;
-    height: 50%;
-    width: 100%;
-    
+ 
+  padding: $padd-respo;
+    object-fit: cover;
+
   }
 
 .bloque-texto {
     font-size: $tama-texto;
-  padding: 10px 50px 20px;
+    padding: $padd-respo;
   grid-column-start: 1;
   grid-row: 2;
 
@@ -244,10 +240,6 @@ $ocultar-foto:none;
      display: flex;
      justify-content: center;
      align-items: center;
-    
-     /*
-     -webkit-calc(30% + 5px);
-     */
      padding:0 20px ;
   
     } 
